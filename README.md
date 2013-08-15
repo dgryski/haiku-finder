@@ -13,3 +13,6 @@ Example:
     software, we are referring
     to freedom, not price.
 
+Inspired by the algorithm behind [Times Haiku](http://haiku.nytimes.com/about)
+
+If you're not running a newspaper, [Project Gutenberg](http://www.gutenberg.org/) has lots of ebooks that make for interesting source material.
