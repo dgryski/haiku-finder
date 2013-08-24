@@ -97,10 +97,24 @@ func formatPoem(poem []string, syllables []int) (string, error) {
 				prefix    string
 				syllables int
 			}{
-				{"NON", 1},
-				{"UN", 1},
-				{"RE", 1},
 				{"ANTI", 2},
+				{"DE", 1},
+				{"DIS", 1},
+				{"EX", 1},
+				{"MEGA", 2},
+				{"MINI", 2},
+				{"MIS", 1},
+				{"MULTI", 2},
+				{"NON", 1},
+				{"POST", 1},
+				{"PRE", 1},
+				{"PRO", 1},
+				{"PROTO", 2},
+				{"QUASI", 2},
+				{"RE", 1},
+				{"SEMI", 2},
+				{"UN", 1},
+				{"VICE", 1},
 			}
 
 			for _, p := range prefixes {
