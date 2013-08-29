@@ -219,7 +219,7 @@ func main() {
 					fmt.Println(p)
 				}
 				sentenceFinished = false
-				poem = nil
+				poem = poem[:0]
 			}
 		}
 	}
