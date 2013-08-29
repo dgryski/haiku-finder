@@ -213,9 +213,7 @@ func main() {
 				syllables := []int{5, 7, 5}
 
 				p, err := formatPoem(poem, syllables)
-				if err != nil {
-					// fmt.Println("err=", err)
-				} else {
+				if err == nil {
 					fmt.Println(p)
 				}
 				sentenceFinished = false
