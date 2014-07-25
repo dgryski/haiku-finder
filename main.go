@@ -170,7 +170,7 @@ func main() {
 	var err error
 	cmudict, err = loadCmudict("cmudict.0.7a")
 	if err != nil {
-		log.Println("failed to load cmudict0.7.a: %s\n")
+		log.Println("failed to load cmudict0.7.a:", err)
 		log.Println("Please download a copy with:")
 		log.Println("curl -o cmudict.0.7a 'http://sourceforge.net/p/cmusphinx/code/11879/tree/trunk/cmudict/cmudict.0.7a?format=raw'")
 		return
