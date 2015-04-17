@@ -65,6 +65,10 @@ func loadCmudict(path string) (map[string][]int, error) {
 		m[w] = syl
 	}
 
+	if err := scan.Err(); err != nil {
+		return nil, err
+	}
+
 	return m, nil
 }
 
