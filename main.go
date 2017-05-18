@@ -12,10 +12,6 @@ import (
 
 func appendIfUnique(w string, l []int, n int) []int {
 
-	if l == nil {
-		return append(l, n)
-	}
-
 	// ugly, but len(l) == 0 almost always, and 1 or 2 very rarely
 	for _, v := range l {
 		if v == n {
@@ -95,7 +91,7 @@ func formatPoem(poem []string, syllables []int) (string, error) {
 		}, word)
 
 		a := cmudict[word]
-		if a == nil || len(a) == 0 {
+		if len(a) == 0 {
 
 			prefixes := []struct {
 				prefix    string
@@ -125,14 +121,14 @@ func formatPoem(poem []string, syllables []int) (string, error) {
 				if strings.HasPrefix(word, p.prefix) {
 					w := strings.TrimPrefix(word, p.prefix)
 					a = cmudict[w]
-					if a != nil && len(a) != 0 {
+					if len(a) > 0 {
 						a[0] += p.syllables
 						break
 					}
 				}
 			}
 
-			if a == nil || len(a) == 0 {
+			if len(a) == 0 {
 				return "", errors.New("unknown word: " + word)
 			}
 		}
