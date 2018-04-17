@@ -4,7 +4,8 @@ This program searches through stdin for sentences that match a 5-7-5 syllable co
 
 You will need the cmudict syllable dictionary.  Download it with:
 
-    curl -o cmudict.0.7a 'http://sourceforge.net/p/cmusphinx/code/11879/tree/trunk/cmudict/cmudict.0.7a?format=raw'
+    curl -O 'https://svn.code.sf.net/p/cmusphinx/code/trunk/cmudict/cmudict.0.7a'
+
 
 Example:
 
